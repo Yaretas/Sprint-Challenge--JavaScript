@@ -77,6 +77,7 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
+graduates.forEach(schools => universities.push(`${schools.university}`))
 console.log(universities)
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
@@ -86,6 +87,8 @@ Name email@example.com
 
 Log the result of your new array. */
 const contactInfo = [];
+
+graduates.forEach(schools => contactInfo.push(`${schools.first_name} ${schools.email}`))
 console.log(contactInfo);
 
 
@@ -137,7 +140,7 @@ The zoos are concenred about animals with a lower population count. Find out whi
 
 */
 let lowerPopulation = [];
-lowerPopulation = zooAnimals.filter(item => item.population < 5);
+lowerPopulation = zooAnimals.filter(animal => animal.population < 5);
 console.log(lowerPopulation);
 
 /* Request 4: .reduce() 
