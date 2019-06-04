@@ -15,7 +15,7 @@ class Cuboid{
         const surface2 = this.length * this.height;
         const surface3 = this.width * this.height;
 
-        return surface1 + surface2 + surface3;
+        return 2* (surface1 + surface2 + surface3);
     };
 }
 
